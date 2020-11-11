@@ -1,24 +1,79 @@
+/* palette 1 - purples */
+$dark_ruby: #2E1114;
+$ruby: #501B1D;
+$grey_lilac: #64485C;
+$lilac: #83677B;
+$grey: #ADADAD;
+/* palette 2 - blues */
+$dark_blue: #0C0032;
+
+/* general variables */
+$background_color: white;
+$header_color: $dark_ruby;
+$text_color: black;
+$text_highlight: $grey_lilac;
+$links: $ruby;
+$header: $ruby;
+$navigation: $ruby;
+$nav_text: white;
+$nav_hover: $dark_ruby;
+$nav_active: $lilac;
+
 body {
-  background-color: #fbc547;
-  color: #333;
+  background-color: $background_color;
+  color: $text_color;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
     "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
     "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
   text-align: center;
 }
 
-a {
-  color: rgba(#000, 0.7);
+body, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
 
-  &:focus,
+div#header {
+  background-color: $header_color;
+  color: white;
+  padding: 10vh;
+}
+
+div.navigation {
+  background-color: $navigation;
+  color: $nav_text;
   &:hover {
-    color: rgba(#000, 0.6);
+    background-color: $nav_hover;
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+ul.nav_link {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li.nav_link {
+  float: left;
+  &:active {
+    background-color: $nav_active;
+  }
+}
+
+li.nav_link a{
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a {
+  color: $links;
+
+  &:focus,
+  &:hover {
+    color: rgba($links, 0.6);
+  }
 }
