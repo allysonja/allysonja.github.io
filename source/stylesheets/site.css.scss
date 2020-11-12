@@ -18,6 +18,8 @@ $navigation: $ruby;
 $nav_text: white;
 $nav_hover: $dark_ruby;
 $nav_active: $lilac;
+$portfolio_background: white;
+$project_background: $grey;
 
 body {
   background-color: $background_color;
@@ -29,10 +31,22 @@ body {
   text-align: center;
 }
 
+/* general rules */
 body, h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+a {
+  color: $links;
+
+  &:focus,
+  &:hover {
+    color: rgba($links, 0.6);
+  }
+}
+
+/* specific rules */
+// header
 div#header {
   overflow: hidden;
   background-color: $header_color;
@@ -42,8 +56,6 @@ div#header {
   flex-direction: row;
   justify-content: center;
 }
-
-div#header:child
 
 #header a.prof-image {
   font-size: 25px;
@@ -66,45 +78,41 @@ div.title {
   font-size: 3em;
 }
 
+// navigation
 div.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+
   background-color: $navigation;
   color: $nav_text;
+}
+
+div.nav_link {
+  padding: 14px 16px;
+
   &:hover {
     background-color: $nav_hover;
   }
 }
 
-ul.nav_link {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+div.nav_link a{
+  color: white;
+  text-align: center;
+  text-decoration: none;
 
-li.nav_link {
-  float: left;
   &:active {
     background-color: $nav_active;
   }
 }
 
-li.nav_link a{
-  color: white;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+// portfolio
+div#portfolio {
+  background-color: $portfolio_background;
 }
 
-a {
-  color: $links;
-
-  &:focus,
-  &:hover {
-    color: rgba($links, 0.6);
+div.project {
+  &:nth-child(even) {
+    background-color: $project_background;
   }
 }

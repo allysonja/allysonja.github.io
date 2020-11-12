@@ -1,9 +1,7 @@
 <div class="navigation">
-    <ul class="nav_link">
-        <li class="nav_link">
-            <% data.navigation.nav_links.each do |link| %>
-                <a href="<%= link.link %>"><%= link.name %></a>
-            <% end %>
-        </li>
-    </ul>
+    <% data.navigation.nav_links.each do |link| %>
+        <div class="nav_link">
+            <a href="<%= link.link %>"><%= link.name %></a>
+        </div>
+    <% end %>
 </div>
