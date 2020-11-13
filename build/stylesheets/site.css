@@ -1,0 +1,70 @@
+/* palette 1 - purples */
+/* palette 2 - blues */
+/* general variables */
+body {
+  background-color: white;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  text-align: center; }
+
+/* general rules */
+body, h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+a {
+  color: #501B1D; }
+  a:focus, a:hover {
+    color: rgba(80, 27, 29, 0.6); }
+
+/* specific rules */
+div#header {
+  overflow: hidden;
+  background-color: #2E1114;
+  color: white;
+  padding: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+#header a.prof-image {
+  font-size: 25px; }
+
+div#header-image {
+  float: left; }
+
+#header-prof-pic {
+  height: 10vw;
+  width: auto;
+  border-radius: 50%; }
+
+div.title {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  font-size: 3em; }
+
+div.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: #501B1D;
+  color: white; }
+
+div.nav_link {
+  padding: 14px 16px; }
+  div.nav_link:hover {
+    background-color: #83677B; }
+
+div.nav_link.active {
+  background-color: #2E1114; }
+
+div.nav_link a {
+  color: white;
+  text-align: center;
+  text-decoration: none; }
+
+div#portfolio {
+  background-color: white; }
+
+div.project:nth-child(even) {
+  background-color: #ADADAD; }

@@ -16,8 +16,8 @@ $links: $ruby;
 $header: $ruby;
 $navigation: $ruby;
 $nav_text: white;
-$nav_hover: $dark_ruby;
-$nav_active: $lilac;
+$nav_hover: $lilac;
+$nav_active: $dark_ruby;
 $portfolio_background: white;
 $project_background: $grey;
 
@@ -96,14 +96,14 @@ div.nav_link {
   }
 }
 
+div.nav_link.active {
+  background-color: $nav_active;
+}
+
 div.nav_link a{
   color: white;
   text-align: center;
   text-decoration: none;
-
-  &:active {
-    background-color: $nav_active;
-  }
 }
 
 // portfolio
