@@ -6,6 +6,9 @@ link: index.html
     <% data.portfolio.projects.each do |project| %>
         <div class="project">
             <h1><%= project.title %></h1>
+            <% if project.status != nil %>
+                <p>-<%= project.status %>-</p>
+            <% end %>
             <% if project.video != nil %>
                 <div class="video">
 
@@ -14,7 +17,7 @@ link: index.html
             <% if project.image != nil %>
                 <div class="image-gallery">
                     <% project.image.each do |image| %>
-
+                        <img src="<%= image %>" alt="project image" class="project-image">
                     <% end %>
                 </div>
             <% end %>

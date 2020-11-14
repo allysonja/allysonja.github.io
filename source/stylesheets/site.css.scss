@@ -52,7 +52,7 @@ div#header {
   overflow: hidden;
   background-color: $header_color;
   color: white;
-  padding: 10vh;
+  padding: 5vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -60,10 +60,6 @@ div#header {
 
 #header a.prof-image {
   font-size: 25px;
-}
-
-div#header-image {
-  float: left;
 }
 
 #header-prof-pic {
@@ -74,9 +70,11 @@ div#header-image {
 
 div.title {
   margin: auto;
-  width: 50%;
+  width: 100%;
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
+  position: relative;
+  left: -5%
 }
 
 // navigation
@@ -122,6 +120,18 @@ div.project {
 
 div.project > div.description {
   text-align: left;
+}
+
+div.image-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img.project-image {
+  margin: 10px;
+  width: 20%;
 }
 
 // about
