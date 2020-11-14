@@ -66,5 +66,29 @@ div.nav_link a {
 div#portfolio {
   background-color: white; }
 
-div.project:nth-child(even) {
-  background-color: #ADADAD; }
+div.project {
+  padding: 5vh; }
+  div.project:nth-child(even) {
+    background-color: #ADADAD; }
+
+div.project > div.description {
+  text-align: left; }
+
+div#about {
+  text-align: left;
+  padding: 10vh; }
+
+div#about h2 {
+  font-size: 1.5em; }
+
+div#contact-me {
+  font-size: 50px; }
+
+div#footer {
+  background-color: #64485C;
+  padding: 5vh 2vh;
+  color: white;
+  text-align: left; }
+
+div#footer a {
+  color: white; }

@@ -1,5 +1,30 @@
 ---
-title: Sonja's Portfolio
+title: Portfolio Projects
 link: index.html
 ---
-<h3> smaller header </h3>
+<div id="portfolio">
+    <% data.portfolio.projects.each do |project| %>
+        <div class="project">
+            <h1><%= project.title %></h1>
+            <% if project.video != nil %>
+                <div class="video">
+
+                </div>
+            <% end %>
+            <% if project.image != nil %>
+                <div class="image-gallery">
+                    <% project.image.each do |image| %>
+
+                    <% end %>
+                </div>
+            <% end %>
+            <% if project.description != nil %>
+                <div class="description">
+                    <% project.description.each do |paragraph| %>
+                        <p><%= paragraph %></p>
+                    <% end %>
+                </div>
+            <% end %>
+        </div>
+    <% end %>
+</div>

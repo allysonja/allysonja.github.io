@@ -1,7 +1,5 @@
 nav_links:
   - name: Home
     link: index.html
-  - name: Portfolio
-    link: portfolio.html
-  #- name: Contact
-  #  link: contact.html
+  - name: About
+    link: about.html

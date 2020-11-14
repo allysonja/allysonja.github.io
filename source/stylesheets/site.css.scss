@@ -113,9 +113,25 @@ div#portfolio {
 }
 
 div.project {
+  padding: 5vh;
+
   &:nth-child(even) {
     background-color: $project_background;
   }
+}
+
+div.project > div.description {
+  text-align: left;
+}
+
+// about
+div#about {
+  text-align: left;
+  padding: 10vh;
+}
+
+div#about h2{
+  font-size: 1.5em;
 }
 
 // contact info

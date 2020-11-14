@@ -1,0 +1,16 @@
+---
+title: Sonja's Portfolio
+link: about.html
+---
+<div id="about">
+    <h2>About Me</h2>
+    <p>Hi! Welcome to my portfolio. This is a work in progress so stay tuned for updates while I figure out how to use middleman and ruby and update with new project information</p>
+    <p>Here are some basics. My name is Sonja Linton, pronounced SO-nyah LIN-ton. I'm currently a junior at Ohio State University, majoring in Computer Information Science with a specialization in Game Design and Animation, minoring in Honors Math and Religious Studies. I intend to graduate with Honors from the College of Arts and Sciences.</p>
+    <p>People often ask why I'm minoring in religious studies. I have always felt that by learning how people develop their opinions and beliefs is vital in encouraging understanding, tolerance, empathy, and in developing deeper relationships with others. In game development, religion and myth often serve as a basis for storytelling, somewhere to start when developing. For example, the recent <i>Hades</i> game depicts Greek mythology in a rogue-like game. While not particularly depicting a singular Greek myth, the game pulls from a variety of stories as inspiration for the persistant storyline.</p>
+
+    <h2>Favorite Games</h2>
+    <% data.about.games.each do |game| %>
+    <h3><a href="<%= game.link %>" target="_blank"><%= game.name %></a></h3>
+    <p><%= game.description %></p>
+    <% end %>
+</div>

@@ -3,7 +3,5 @@ projects:
     video:
     image:
     description:
-  - title: 2nd Dungeon - Legend of Zelda
-    video:
-    image:
-    description:
+      - For this project in CSE 3902, we are given a full semester to implement part of a 2D video game. The project is split into sprints to give us an idea of project work in the industry. We are given full reign over software design components although we are required to use C#, the XNA Monogame framework, and Visual Studio.
+      - Our group chose to implement the first level (dungeon) of the original 1986 Legend of Zelda.
