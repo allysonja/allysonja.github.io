@@ -3,5 +3,5 @@ nav_links:
     link: index.html
   - name: Portfolio
     link: portfolio.html
-  - name: Contact
-    link: contact.html
+  #- name: Contact
+  #  link: contact.html

@@ -1,0 +1,10 @@
+---
+title: Contact Information
+link: contact.html
+---
+<div id="contact-me">
+    <% data.contact.contact_info.each do |contact| %>
+        <p>Email: <a href="mailto:<%= contact.email %>"><%= contact.email %></a></p>
+        <p>Phone: <%= contact.phone %></p>
+    <% end %>
+</div>

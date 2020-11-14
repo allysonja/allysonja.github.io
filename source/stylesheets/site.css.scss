@@ -20,6 +20,7 @@ $nav_hover: $lilac;
 $nav_active: $dark_ruby;
 $portfolio_background: white;
 $project_background: $grey;
+$footer: $grey_lilac;
 
 body {
   background-color: $background_color;
@@ -115,4 +116,21 @@ div.project {
   &:nth-child(even) {
     background-color: $project_background;
   }
+}
+
+// contact info
+div#contact-me {
+  font-size: 50px;
+}
+
+// footer
+div#footer {
+  background-color: $footer;
+  padding: 5vh 2vh;
+  color: white;
+  text-align: left;
+}
+
+div#footer a {
+  color: white;
 }
