@@ -11,7 +11,10 @@ link: index.html
             <% end %>
             <% if project.video != nil %>
                 <div class="video">
-
+                    <video width="320" height="240" controls>
+                    <source src="<%= project.video %>" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
                 </div>
             <% end %>
             <% if project.image != nil %>

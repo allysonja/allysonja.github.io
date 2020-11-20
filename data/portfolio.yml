@@ -1,10 +1,11 @@
 projects:
   - title: 1st Dungeon - Legend of Zelda
     status: IN PROGRESS
-    video:
+    video: videos/LoZ_Sprint4.mp4
     image:
       #- images/portfolio/CSE3902-LoZ/....
     description:
+      - (If watching the video, please note that this is not the final product, just the result of five people working on one project for two months. The game is fairly playable, with a few graphics glitches and no majorly important game components missing.)
       - For this project in CSE 3902, we are given a full semester to implement part of a 2D video game. The project is split into sprints to give us an idea of project work in the industry. We are given full reign over software design components although we are required to use C#, the XNA Monogame framework, and Visual Studio.
       - Our group chose to implement the first level (dungeon) of the original 1986 Legend of Zelda. In this particular assignment, our group designed an entity-component system to make it easier to implement a variety of enemies. We have a behavior script system, which modifys the entity's behavior and usually determines movement sequences, a sprite system to implement the drawing of each entity on the screen, and a text component for writing and animating text on the screen.
       - I specifically designed and implemented sprite drawing, level loading, and text system. During the first sprint I created an interface for a basic sprite in which you could load a list of frames and the code would cycle through the frames for a set number of updates to slow down the animation. I also went through and set up the sprite factories for all necessary entities by having frames classes for each type that designated a dictionary of rectangles taken from the spritesheets, and then the factory would set up the frames into the list and return the basic sprite that had been initialized.
