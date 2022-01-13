@@ -1,0 +1,9 @@
+cse5912:
+  - title: Homework 2
+    image:
+      - images/CSE_5912/sonja_mars.jpg
+      - images/CSE_5912/jellyfish_up.jpg
+      - images/CSE_5912/getty_museum_challenge.jpg
+      - images/CSE_5912/john_singer.jpg
+    description:
+      - For the first image, this is a photo of me at the National Space Museum with the Curiosity rover. I spliced this image with GIMP on top of an image of the surface of Mars. The second photo is of me as a jellyfish with an exhibit of jellyfish from the aquarium. I used <a src="https://pixlr.com/x/">Pixlr</a> to transpose the images and affect the transparency. The third image is a photo I took for the Getty Museum Challenge, where you attempt to look like a piece of art that is in the museum. I chose the portrait <i>Mrs. Charles E. Inches (Louise Pomeroy)</i> by John Singer Sargent, as seen in the forth photo, and used <a src="https://pixlr.com/x/">Pixlr</a> to edit the photo to make it more grainy and painting-like.

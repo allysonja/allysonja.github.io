@@ -1,0 +1,25 @@
+---
+title: CSE 5912 About
+link: cse5912.html
+---
+<div id="portfolio">
+    <% data.cse5912.cse5912.each do |project| %>
+        <div class="project">
+            <h1><%= project.title %></h1>
+            <% if project.description != nil %>
+                <div class="description">
+                    <% project.description.each do |paragraph| %>
+                        <p><%= paragraph %></p>
+                    <% end %>
+                </div>
+            <% end %>
+            <% if project.image != nil %>
+                <div class="image-gallery">
+                    <% project.image.each do |image| %>
+                        <img src="<%= image %>" alt="image of sonja" width="48%" style="padding: 2px;">
+                    <% end %>
+                </div>
+            <% end %>
+        </div>
+    <% end %>
+</div>
